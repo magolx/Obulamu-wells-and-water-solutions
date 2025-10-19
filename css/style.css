@@ -1,0 +1,273 @@
+/* ========== GENERAL PAGE STYLING ========== */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #0077b6;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 0 15px;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #0077b6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo */
+header .logo img,
+header img {
+  height: 70px;
+  width: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd60a;
+}
+
+/* ========== BANNER ========== */
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #0077b6;
+}
+
+/* ========== HOME PAGE CONTENT ========== */
+section h1 {
+  margin-top: 40px;
+}
+
+section p {
+  margin-bottom: 30px;
+  font-size: 1.05em;
+}
+
+/* Services List */
+.menu {
+  background: white;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu ol {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  background: #e3f2fd;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.menu li:hover {
+  background: #bbdefb;
+}
+
+/* Borehole image section */
+.bores img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+  text-align: center;
+  font-size: 1.3em;
+  color: #0077b6;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* ========== ABOUT PAGE ========== */
+.vision, .Mission {
+  background: white;
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.vision audio,
+.Mission audio {
+  margin-top: 10px;
+}
+
+section ul {
+  list-style-type: disc;
+  max-width: 800px;
+  margin: 10px auto;
+  padding-left: 20px;
+}
+
+.SERVICES {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.SERVICES img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.SERVICES img:hover {
+  transform: scale(1.05);
+}
+
+/* ========== CONTACT PAGE ========== */
+address {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  margin: 20px auto;
+  color: #333;
+  font-size: 1.05em;
+}
+
+form {
+  text-align: center;
+  margin: 30px auto;
+}
+
+form input,
+form textarea {
+  width: 80%;
+  max-width: 500px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005b8a;
+}
+
+/* Social Media Icons */
+.Social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.Social img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.Social img:hover {
+  transform: scale(1.1);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #003459;
+  color: #ddd;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  header img {
+    height: 60px;
+  }
+
+  .menu,
+  .vision,
+  .Mission {
+    padding: 15px;
+  }
+
+  .SERVICES img {
+    width: 90%;
+  }
+
+  form input,
+  form textarea {
+    width: 90%;
+  }
+}
